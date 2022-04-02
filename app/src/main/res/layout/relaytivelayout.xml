@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Dang Nhap"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtDN"
+        android:id="@+id/edUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:padding="12dp" />
+    <EditText
+        android:layout_below="@+id/edUser"
+        android:hint="Passwd"
+        android:id="@+id/pass"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btnDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:layout_toLeftOf="@id/Quenmk"
+        android:text="DangNhap" />
+
+    <Button
+        android:id="@+id/Quenmk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:text="QuenMK" />
+
+    <Button
+        android:id="@+id/trogiup"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/pass"
+        android:layout_toEndOf="@+id/Quenmk"
+
+        android:text="trogiup" />
+
+</RelativeLayout>

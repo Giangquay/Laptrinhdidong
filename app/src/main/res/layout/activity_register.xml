@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+    <EditText
+        android:padding="12dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="#E2EDF6"
+        />
+
+    <EditText
+        android:layout_marginTop="7dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="#E2EDF6"
+        android:hint="Ten nguoi dung"
+        android:padding="12dp" />
+
+    <EditText
+        android:layout_marginTop="7dp"
+        android:padding="12dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Mat khau"
+        android:background="#E2EDF6"/>
+    <EditText
+        android:layout_marginTop="7dp"
+        android:padding="12dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhap lai mat khau"
+        android:background="#E2EDF6"/>
+    <Button
+        android:layout_marginTop="7dp"
+        android:textSize="20dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design_button_log_reg"
+        android:hint="Tao tai khoan"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Quaylai"
+        android:textSize="16dp"
+        android:text="Quai lai Dang Nhap"/>
+</LinearLayout>

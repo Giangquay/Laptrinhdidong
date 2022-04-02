@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DsSport Team"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/messi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:hint="test@gmail.com"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messi"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="#E2EDF6"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#E2EDF6"
+        android:hint="*****"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="40dp"
+        android:text="Quen Mat Khau"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/Forget"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/btn1"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Dang Nhap"
+        android:background="@drawable/design_button_log_reg"
+        app:layout_constraintLeft_toLeftOf="@id/Forget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Forget"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="4dp"
+        android:textSize="17sp"
+        android:text="Lua Chon Khac"
+        app:layout_constraintStart_toStartOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        android:id="@+id/luachon"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/luachon"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/btn"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/facebook"
+           />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/google_plus"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/phone_call"
+            android:layout_marginLeft="12dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="20dp"
+        android:text="Tạo tài khoản"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

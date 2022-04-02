@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cute"
+        />
+
+    <CheckBox
+        android:id="@+id/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="7dp"
+        android:text="Android" />
+
+    <CheckBox
+        android:id="@+id/ios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="7dp"
+        android:text="Ios" />
+
+    <CheckBox
+        android:id="@+id/window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="7dp"
+        android:text="Window" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:minHeight="48dp"
+            android:id="@+id/Nam"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"/>
+
+        <RadioButton
+            android:id="@+id/Nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="NU" />
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="4"
+        android:padding="7dp"
+        android:rating="1"
+        android:stepSize="1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/country"
+        android:minHeight="48dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/sub"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        android:id="@+id/Hienthi"
+        android:textSize="20sp"/>
+</LinearLayout>
