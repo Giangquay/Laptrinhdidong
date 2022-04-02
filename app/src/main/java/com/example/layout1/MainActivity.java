@@ -1,9 +1,12 @@
 package com.example.layout1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calcutator_activity);
-//        sp1=findViewById(R.id.sp2);
+        //        sp1=findViewById(R.id.sp2);
 //        sp2=findViewById(R.id.sp);
 //        String [] list = {"PTIT","HUST","NEU","NUCE","FTU"};
 //        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.item,list);
@@ -109,5 +112,20 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return  s;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    public boolean onOptionsItemSelected(@NonNull MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.mFile:
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
